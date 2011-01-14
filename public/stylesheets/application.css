@@ -18,11 +18,20 @@ select {
 }
 
 select, label {
-  font-size: 2.6em;
+  font-size: 2em;
   float: right;
 }
 
 label {
   margin-right: 20px;
   color: #999;
+}
+
+#details {
+  float: left;
+}
+
+#visualisation {
+  width: 520px;
+  float: right;
 }
