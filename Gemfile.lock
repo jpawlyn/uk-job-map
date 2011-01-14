@@ -70,4 +70,4 @@ PLATFORMS
 
 DEPENDENCIES
   mysql
-  rails (~> 3.0.0)
+  rails (= 3.0.1)
