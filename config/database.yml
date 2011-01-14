@@ -16,3 +16,11 @@ test:
   database: uk_job_map_test
   username: uk_job_map
   password:
+
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: true
+  database: uk_job_map_production
+  username: uk_job_map
+  password:
