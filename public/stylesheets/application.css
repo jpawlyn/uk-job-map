@@ -9,6 +9,7 @@ header {
   background: #00A3F1;
   overflow-y: auto;
   margin-bottom: 20px;
+  display: block;
 }
 
 h1 {
