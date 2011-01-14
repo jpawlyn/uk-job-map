@@ -6,40 +6,43 @@
   </form>
 </header>
 
-  <p>
+<div id="page">
+  <div id="map">
   <% if @industry.present? -%>
     <%= image_tag "uk_region_map.png" %>
   <% else -%>
     <%= image_tag "empty_uk_region_map.png" %>
   <% end -%>
-  </p>
-
-
-<% if @industry == 'IT' %>
-  <div id="details">
-  Total number of IT&amp;T professionals: 58,500 IT/telecom professionals <span>(2009)</span>
-  <ol>
-    <li>Derbyshire: 24,000</li>
-    <li>Nottinghamshire: 15,000</li>
-    <li>Lincolnshire: 12,000</li>
-    <li>Leicestershire: 9,500</li>
-    <li>Rutland: 1,800</li>
-    <li>Northamptonshire: 1,200</li>
-  </ol>
   </div>
+
+
+  <% if @industry == 'IT' %>
+    <div id="details">
+    Total number of IT&amp;T professionals: 58,500 IT/telecom professionals <span>(2009)</span>
+    <ol>
+      <li>Derbyshire: 24,000</li>
+      <li>Nottinghamshire: 15,000</li>
+      <li>Lincolnshire: 12,000</li>
+      <li>Leicestershire: 9,500</li>
+      <li>Rutland: 1,800</li>
+      <li>Northamptonshire: 1,200</li>
+    </ol>
+    </div>
   
-  <div id="visualisation">
-    <applet alt="Visualization for Bubble Chart" archive="http://www-958.ibm.com/software/data/cognos/manyeyes/static/code/manyeyes-base-v3.jar, http://www-958.ibm.com/software/data/cognos/manyeyes/files/code/da63783c-072e-11e0-b6bd-000255111976.jar" code="com.ibm.cognos.manyeyes.container.ManyEyesContainer" height="520" id="visualization" platform="java" width="100%">
-      Visualization for Bubble Chart <param id="codebase" name="codebase" value="http://www-958.ibm.com/software/data/cognos/manyeyes/">
-       <param id="appContextKey" name="appContextKey" value="http://www-958.ibm.com/me">
-       <param id="appletClass" name="appletClass" value="com.ibm.cognos.manyeyes.diagram.ManyEyesDiskChart">
-       <param id="authenticityToken" name="authenticityToken" value="00409ea979f5f24d">
-       <param id="locale" name="locale" value="en">
-       <param id="dataURL" name="dataURL" value="http://www-958.ibm.com/software/data/cognos/manyeyes/datasets/306ceb121ff011e0b284000255111976/versions/1.txt">
-       <param id="dataSchema" name="dataSchema" value=" {&quot;format&quot;:&quot;tabular&quot;,&quot;columns&quot;: {&quot;County&quot;:&quot;text&quot;,&quot;Jobs/Total&quot;:&quot;number&quot;}} ">
-       <param id="visualStateURL" name="visualStateURL" value="http://www-958.ibm.com/software/data/cognos/manyeyes/files/state/48d0e1ea-1ff0-11e0-8483-000255111976.state">
-       <param id="bugReportUrlTemplate" name="bugReportUrlTemplate" value="mailto:manyeyes@us.ibm.com?subject={0}&amp;body={1}">
-    </applet>
-  </div>
+    <div id="visualisation">
+      <applet alt="Visualization for Bubble Chart" archive="http://www-958.ibm.com/software/data/cognos/manyeyes/static/code/manyeyes-base-v3.jar, http://www-958.ibm.com/software/data/cognos/manyeyes/files/code/da63783c-072e-11e0-b6bd-000255111976.jar" code="com.ibm.cognos.manyeyes.container.ManyEyesContainer" height="520" id="visualization" platform="java" width="100%">
+        Visualization for Bubble Chart <param id="codebase" name="codebase" value="http://www-958.ibm.com/software/data/cognos/manyeyes/">
+         <param id="appContextKey" name="appContextKey" value="http://www-958.ibm.com/me">
+         <param id="appletClass" name="appletClass" value="com.ibm.cognos.manyeyes.diagram.ManyEyesDiskChart">
+         <param id="authenticityToken" name="authenticityToken" value="00409ea979f5f24d">
+         <param id="locale" name="locale" value="en">
+         <param id="dataURL" name="dataURL" value="http://www-958.ibm.com/software/data/cognos/manyeyes/datasets/306ceb121ff011e0b284000255111976/versions/1.txt">
+         <param id="dataSchema" name="dataSchema" value=" {&quot;format&quot;:&quot;tabular&quot;,&quot;columns&quot;: {&quot;County&quot;:&quot;text&quot;,&quot;Jobs/Total&quot;:&quot;number&quot;}} ">
+         <param id="visualStateURL" name="visualStateURL" value="http://www-958.ibm.com/software/data/cognos/manyeyes/files/state/48d0e1ea-1ff0-11e0-8483-000255111976.state">
+         <param id="bugReportUrlTemplate" name="bugReportUrlTemplate" value="mailto:manyeyes@us.ibm.com?subject={0}&amp;body={1}">
+      </applet>
+    </div>
+
+</div>
 
 <% end %>

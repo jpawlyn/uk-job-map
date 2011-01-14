@@ -3,12 +3,20 @@ html, body {
   font-family: "Helvetica";
 }
 
-h1 {
-  color: #FFF;
-  border-bottom: 3px solid #006798;
-  font-weight: normal;
+header {
   padding: 15px 0 15px 15px;
+  border-bottom: 3px solid #006798;
   background: #00A3F1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  font-weight: normal;
+  float: left;
 }
 
 select {
@@ -24,7 +32,17 @@ select, label {
 
 label {
   margin-right: 20px;
-  color: #999;
+  color: #FFF;
+}
+
+#page {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#map {
+  float: left;
+  width: 418px;
 }
 
 #details {
