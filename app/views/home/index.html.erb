@@ -4,5 +4,9 @@
 <% end -%>
 
 <p>
-  <%= image_tag "uk_region_map.png" %>
+  <% if @industry.present? -%>
+    <%= image_tag "uk_region_map.png" %>
+  <% else -%>
+    <%= image_tag "empty_uk_region_map.png" %>
+  <% end -%>
 </p>
