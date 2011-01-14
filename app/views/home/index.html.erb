@@ -1,9 +1,9 @@
 <header>
   <h1>UK Job Map</h1>
-  <%= form_tag "/", :method => "get" do -%>
+  <form action="/" method="get">
     <%= select_tag("industry", industry_options.html_safe, :onchange => "this.form.submit();") %>
     <%= label_tag :industry %>
-  <% end -%>
+  </form>
 </header>
 
   <p>
