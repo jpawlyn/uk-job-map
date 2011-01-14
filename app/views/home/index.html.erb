@@ -1,6 +1,7 @@
-<h1>UK Job Map<h1>
+<h1>UK Job Map</h1>
 <%= form_tag "/", :method => "get" do -%>
   <%= select_tag("industry", industry_options.html_safe, :onchange => "this.form.submit();") %>
+  <%= label_tag :industry %>
 <% end -%>
 
 <p>
@@ -10,3 +11,16 @@
     <%= image_tag "empty_uk_region_map.png" %>
   <% end -%>
 </p>
+
+<% if @industry == 'IT' %>
+  Total number of IT&amp;T professionals: 58,500 IT/telecom professionals <span>(2009)</span>
+
+<ol>
+  <li>Derbyshire: 24,000</li>
+  <li>Nottinghamshire: 15,000</li>
+  <li>Lincolnshire: 12,000</li>
+  <li>Leicestershire: 9,500</li>
+  <li>Rutland: 1,800</li>
+  <li>Northamptonshire: 1,200</li>
+</ol>
+<% end %>

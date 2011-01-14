@@ -1,0 +1,28 @@
+html, body {
+  background: #FFF;
+  font-family: "Helvetica";
+}
+
+h1 {
+  color: #FFF;
+  border-bottom: 3px solid #006798;
+  font-weight: normal;
+  padding: 15px 0 15px 15px;
+  background: #00A3F1;
+}
+
+select {
+  border: 2px solid #00A3F1;
+  background: white;
+  float: right;
+}
+
+select, label {
+  font-size: 2.6em;
+  float: right;
+}
+
+label {
+  margin-right: 20px;
+  color: #999;
+}
